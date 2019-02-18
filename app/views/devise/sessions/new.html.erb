@@ -1,0 +1,43 @@
+<div class="login">
+  <div class="container">
+    <div class="row">
+      <div class="Absolute-Center is-Responsive">
+
+          <div class="col-sm-12 col-md-10 col-md-offset-1">
+            <div class="">
+              <%= image_tag("logo.png", alt: "logo") %>
+            </div>
+
+              <%= form_for(resource, as: resource_name, url: session_path(resource_name), id: 'loginForm')  do |f| %>
+                <div class="field">
+                  <div class="form-group input-group">
+                   <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                   <input class="form-control" type="text" name='<%= :email %><br />' placeholder="<%= :email %>"/>
+                 </div>
+                 <div class="form-group input-group">
+                   <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                   <input class="form-control" type="password" name='<%= :password %>' placeholder="<%= :password %>"/>
+                 </div>
+                </div>
+
+
+                <% if devise_mapping.rememberable? %>
+
+                  <div class="field">
+                    <%= f.check_box :remember_me, class: 'roundedOne' %>
+                    <%= f.label :remember_me %>
+                  </div>
+                <% end %>
+
+                <div class="form-group">
+                  <%= f.submit "Log in", class: 'btn btn-def btn-block' %>
+                </div>
+              <% end %>
+
+              <%= render "devise/shared/links" %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

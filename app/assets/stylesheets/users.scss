@@ -1,0 +1,87 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.Absolute-Center.is-Responsive {
+  background-color: #009688;
+  text-align: center;
+  border-radius: 3px;
+  padding-top: 25px !important;
+  padding-left: 50px!important;
+  width: 50%;
+  height: 55%;
+  min-width: 200px;
+  max-width: 400px;
+}
+
+.glyphicon-user{
+  @extend %glyphicon-user;
+}
+
+.glyphicon-user, .glyphicon-lock {
+    position: relative;
+    top: 0px;
+    margin: 4px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 2;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.glyphicon-lock{
+  @extend %glyphicon-lock;
+}
+div.well{
+  height: 250px;
+}
+.Absolute-Center {
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+#logo-container{
+  margin: auto;
+  margin-bottom: 10px;
+  width:200px;
+  height:20px;
+}
+.btn{
+  background-color: white;
+  width: 90%!important;
+  margin-left: 25px;
+}
+a {
+  color: #ffffff;
+}
+label {
+  color: white;
+}
+img {
+    width: 80px;
+    margin-bottom: 10px;
+}
+.navbar-light .navbar-nav .nav-link-index {
+    color: #ffffff;
+}
+.input-group > .form-control:not(:first-child), .input-group > .custom-select:not(:first-child) {
+  width: 50%;
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.registration input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="button"].btn-block {
+  width: 68% !important;
+  margin-left: 11%;
+  margin-bottom: 10px;
+}
+.registration a {
+    margin-left: -50px;
+    margin-top: 50px!important;
+}
+em {
+    color: white;
+    margin-left: 23px;
+}
+.alert{
+    margin-top: 50px!important;
+}
